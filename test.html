@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Test • Smart Study</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <meta name="color-scheme" content="light dark" />
+</head>
+<body data-page="test">
+    <div class="layout">
+        <aside class="sidebar">
+            <div class="brand" style="margin-bottom:10px">
+                <div class="logo">🧠</div>
+                <span class="brand-name">Smart Study</span>
+            </div>
+            <nav class="nav">
+                <a href="#" data-link data-route="dashboard.html">Home</a>
+                <a href="#" data-link data-route="test.html" class="active">Smart Tests</a>
+                <a href="#" data-link data-route="progress.html">Progress</a>
+                <a href="#" data-link data-route="about.html">Settings / About</a>
+            </nav>
+        </aside>
+        <main class="main">
+            <header class="fade-in" style="display:flex;align-items:center;justify-content:space-between;gap:10px">
+                <h2 style="margin:0">Smart Test</h2>
+                <div>
+                    <button class="btn" id="modeToggleTop">🌓</button>
+                </div>
+            </header>
+
+            <section class="card fade-in" style="margin-top:16px">
+                <div style="display:flex;align-items:center;justify-content:space-between">
+                    <div>
+                        <h4>AI Suggested Set</h4>
+                        <p style="color:var(--muted);margin:6px 0">20 questions • 25 minutes • Target 85%+ accuracy</p>
+                    </div>
+                    <button class="btn primary" id="startTestBtn">Start Test</button>
+                </div>
+            </section>
+
+            <section id="testArea" class="fade-in" style="display:none;margin-top:16px">
+                <form id="testForm" class="card">
+                    <div id="questions"></div>
+                    <div style="display:flex;gap:10px;justify-content:flex-end;margin-top:12px">
+                        <button type="submit" class="btn secondary">Submit</button>
+                        <button type="button" id="cancelTestBtn" class="btn ghost">Cancel</button>
+                    </div>
+                </form>
+            </section>
+
+            <section id="resultsArea" class="card fade-in" style="display:none;margin-top:16px">
+                <h4>Results</h4>
+                <p id="scoreLine" style="margin:6px 0 10px"></p>
+                <div class="grid cols-2">
+                    <div>
+                        <canvas id="resultChart" height="120"></canvas>
+                    </div>
+                    <div>
+                        <h4>Recommended Topics</h4>
+                        <ul style="margin:8px 0 0 18px;color:var(--muted)">
+                            <li>Quadratic Equations</li>
+                            <li>Conditional Probability</li>
+                            <li>Graph Interpretation</li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="margin-top:12px">
+                    <a class="btn primary" href="#" data-link data-route="dashboard.html">Back to Dashboard</a>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
+
+
+

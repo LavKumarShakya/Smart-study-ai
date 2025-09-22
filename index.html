@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI-Driven Smart Study Preparation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <meta name="color-scheme" content="light dark" />
+</head>
+<body data-page="landing">
+    <header class="site-header container">
+        <div class="brand">
+            <div class="logo">🧠</div>
+            <span class="brand-name">Smart Study</span>
+        </div>
+        <nav class="site-nav">
+            <a href="#" data-link data-route="index.html">Home</a>
+            <a href="#" data-link data-route="dashboard.html">Dashboard</a>
+            <a href="#" data-link data-route="test.html">Smart Test</a>
+            <a href="#" data-link data-route="progress.html">Progress</a>
+            <a href="#" data-link data-route="about.html">About</a>
+        </nav>
+        <div class="actions">
+            <button class="btn ghost" id="loginBtn">Login</button>
+            <button class="mode-toggle" id="modeToggle" aria-label="Toggle theme"></button>
+        </div>
+    </header>
+
+    <main class="hero container fade-in">
+        <div class="hero-text">
+            <h1>AI-Driven Smart Study Preparation</h1>
+            <p class="tagline">Smarter, Faster, Data-Driven Exam Prep.</p>
+            <div class="cta">
+                <a class="btn primary" href="#" data-link data-route="dashboard.html">Get Started</a>
+                <a class="btn secondary" href="#" data-link data-route="test.html">Try Smart Test</a>
+            </div>
+            <p class="sub-note">No signup required for this demo.</p>
+        </div>
+        <div class="hero-visual">
+            <div class="glass card kpi">
+                <div class="kpi-number">92%</div>
+                <div class="kpi-label">Predicted Accuracy</div>
+            </div>
+            <div class="glass card kpi">
+                <div class="kpi-number">+18%</div>
+                <div class="kpi-label">Improvement</div>
+            </div>
+            <div class="blob"></div>
+        </div>
+    </main>
+
+    <section class="features container fade-in">
+        <div class="feature-card">
+            <div class="icon">🔮</div>
+            <h3>AI Predictions</h3>
+            <p>Identify high-yield topics using data-driven insights and mock performance.</p>
+        </div>
+        <div class="feature-card">
+            <div class="icon">📝</div>
+            <h3>Smart Tests</h3>
+            <p>Adaptive question sets personalize difficulty and maximize learning gains.</p>
+        </div>
+        <div class="feature-card">
+            <div class="icon">📈</div>
+            <h3>Progress Tracking</h3>
+            <p>Visualize accuracy trends and time-on-task to steer your preparation.</p>
+        </div>
+    </section>
+
+    <footer class="site-footer container">
+        <span>© <span id="year"></span> Smart Study Prototype</span>
+        <a href="#" data-link data-route="about.html">About & References</a>
+    </footer>
+</body>
+</html>
+
+
